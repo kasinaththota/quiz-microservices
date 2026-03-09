@@ -28,7 +28,7 @@ public class QuestionController {
         System.out.println("port userd: "+environment.getProperty("local.server.port"));
         return questionService.getAllQuestions();
     }
-
+//service to get questions by category
     @RequestMapping("/category/{category}")
     public ResponseEntity<List<Question>> getQuestionsByCategory(@PathVariable String category) {
         return questionService.getQuestionsByCategory(category);
