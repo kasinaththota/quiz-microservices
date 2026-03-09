@@ -22,7 +22,7 @@ public class QuestionController {
     @Autowired
     Environment environment;
 
-
+//service to get all questions
     @RequestMapping("/allQuestions")
     public ResponseEntity<List<Question>> getAllQuestions() {
         System.out.println("port userd: "+environment.getProperty("local.server.port"));
